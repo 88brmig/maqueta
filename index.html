@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Nuevo</li>
+        <li>
+          <a href="historial.html">Historial</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="title">
+        <span>Crear un nuevo ticket</span>
+      </div>
+      <form action="">
+        <div class='summary'>
+          <p>Escribe un breve titulo para el ticket</p>
+          <input id="summary" type="text">
+        </div>
+        <div class="category">
+          <label for="category">Elige el tipo de ticket: </label>
+          <select name="select-category" id="category">
+            <option value="1">Sistemas</option>
+            <option value="2">Recursos Humanos</option>
+            <option value="3">Salud</option>
+            <option value="4">Mantenimiento</option>
+            <option value="5">Otros</option>
+          </select>
+        </div>
+        <div class="description">
+          <label for="description">Cuentanos acerca del problema...</label>
+          <textarea name="description" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
